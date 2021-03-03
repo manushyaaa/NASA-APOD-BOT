@@ -6,11 +6,14 @@ import re
 import tweepy
 from time import sleep
 
-KEY = os.environ['KEY']
-access_token = os.environ['access_token']
-access_token_secret = os.environ['access_token_secret']
-consumer_key = os.environ['consumer_key']
-consumer_secret = os.environ['consumer_secret']
+KEY = "qxsEkJhi52IftWxPAcfzmbFvSFGqHtoxGZzImnhx"
+
+access_token = "1316993009037111297-QRWNgFrcI8kudT1NOmQ5qo01MZOD6l"
+access_token_secret = "415nEzYGq0vTdagRKGZHuESZujX3XUuffsVVUR0DVsNUN"
+consumer_key = "hju9PIe1eNLOi0Kg2HDnGZNkZ"
+consumer_secret = "vN47kaaKohrV7csZqZEc8Qqr3jAYjZ0ZSzJ2EiSNrN5puo2NN6"
+
+
 nasa = Nasa(key=KEY)
 
 
@@ -22,7 +25,7 @@ def bot():
     explanation = apod_image['explanation']
     explanation_list = re.split('[.!?]', explanation)
 
-    status = f"{explanation_list[0]}. #NASA #APOD"
+    status = f"{explanation_list[0]}. #NASA #APOD #SpaceX"
     print(status)
 
     image = f'./images/{dateToday}.jpg'
@@ -43,7 +46,4 @@ def bot():
         print("Image not present")
 
 
-while True:
-    bot()
-    print('------------------------SLEEPING------------------------')
-    sleep(3600)
+bot()
