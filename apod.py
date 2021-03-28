@@ -6,12 +6,12 @@ import re
 import tweepy
 from time import sleep
 
-KEY = "qxsEkJhi52IftWxPAcfzmbFvSFGqHtoxGZzImnhx"
+KEY = "YOUR_NASA_API_KEY"
 
-access_token = "1316993009037111297-QRWNgFrcI8kudT1NOmQ5qo01MZOD6l"
-access_token_secret = "415nEzYGq0vTdagRKGZHuESZujX3XUuffsVVUR0DVsNUN"
-consumer_key = "hju9PIe1eNLOi0Kg2HDnGZNkZ"
-consumer_secret = "vN47kaaKohrV7csZqZEc8Qqr3jAYjZ0ZSzJ2EiSNrN5puo2NN6"
+access_token = ""
+access_token_secret = ""
+consumer_key = ""
+consumer_secret = ""
 
 
 nasa = Nasa(key=KEY)
