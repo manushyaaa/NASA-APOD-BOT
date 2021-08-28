@@ -1,2 +1,2 @@
 # NASA-APOD-BOT
- Tweets the lastest APOD to a twitter acount
+ Tweets the latest APOD to a twitter acount
